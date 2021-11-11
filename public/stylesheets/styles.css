@@ -1,7 +1,69 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+:root {
+  --clr-white: #f7f9f9;
+  --clr-lightblue: #2081c3;
+  --clr-darkblue: #0a2c42;
+  --clr-grey: #bfbfbf;
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-white);
+  font-family: var(--font-main);
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-bar {
+  background-color: var(--clr-lightblue);
+  height: 8%;
+  padding-left: 60px;
+  align-items: center;
+}
+
+.nav-bar * {
+  text-decoration: none;
+  color: var(--clr-white);
+  padding-right: 20px;
+}
+
+.home-container {
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.main-logo {
+  width: 40%;
+  margin: 10%;
+}
+
+.button-div {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.button-like {
+  background-color: var(--clr-lightblue);
+  color: var(--clr-white);
+  padding: 2em 5em;
+  text-decoration: none;
+  border-radius: 1em;
+  margin-bottom: 3em;
+}
+
+.main-container {
+  flex-wrap: wrap;
+}
+
+.beer-container {
+  flex: 0 1 20em;
+}
+
+.beer-img {
+  width: 10em;
+  height: 20em;
+}
